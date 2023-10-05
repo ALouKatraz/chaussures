@@ -167,5 +167,8 @@ footer>div>div:nth-of-type(2){
 footer>div>div>p{
     display: block;
 }
+footer>div>a{
+    margin: 5px;
+}
 
 /***** Fin FOOTER****/
