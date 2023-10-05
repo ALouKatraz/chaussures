@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-weight: normal;
 }
 ul{ 
     list-style: none;
@@ -24,39 +25,52 @@ a{
 /*****HTML****/
 html{
     scroll-behavior: smooth;
-    font-family: "Noodle";
 }
 /*****fin HTML*****/
 /*********/
 /*****HEADER****/
 header{
-    height: 500px;
+    height: 100vh;
+    background: url(../img/fond.jpg) center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../img/fond.jpg) center;
 }
+header nav{
+    position: fixed;/*toujours dire où je positionne (top left)*/
+    top:50%;
+    left: 5%;
+    background: rgba(255, 255, 255, 0.7);
+    transform: translateY(-50%);
+}
+header nav ul li{
+    padding: 10px 20px;
+    border-bottom: 2px solid;
+}
+
+header nav ul li:last-of-type{
+    border-bottom: none;
+}
+
+header nav ul li a{
+    font-family: 'Noodle';
+    color: black;
+    text-transform: uppercase;
+}
+
 header div{
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
+    width: 20vw; /*taille responsive*/
+    height: 20vw; /*taille responsive*/
     position: relative;
+    border-radius: 50%;
+
 }
 header div img{
     height: 100%;
     position: absolute;
 }
-header nav{
-    position: fixed;
-    top:50%;
-    left: 5%;
-    transform: translateY(-50%);
-}
-header nav ul li{
-    background: rgba(255, 255, 255, 0.5);
-    padding: 20px;
-    border-bottom: 1px solid;
-}
+
 /***** Fin HEADER****/
 /***
 ****
@@ -77,27 +91,81 @@ section>div{
     height: 250px;
     margin: 40px;
 }
+section>div img{
+    height: 100%;
+    /*margin: 5px;*/
+}
 section>div>div{
-    height: 70%;
+    position: relative;
+    overflow: hidden;
+}
+
+section>div>div>div{
+    width: 250px;
+    height: 250px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: absolute;
+    top: 0;
+    left:0;
     display: flex;
     justify-content: center;
-    margin-bottom: 10%;
+    align-items: center;
+    transition: 1s;
 }
-section>div>div img{
-    /*height: 100%;*/
-    margin: 5px;
+
+section>div>div>div>p{
+    text-align: center;
 }
 section>div h2{
     height: 20%;
     display: flex;
     align-items: center;
 }
-section div>p{
-    display: none;
+.haut div{
+    transform: translateY(-100%);
 }
+.haut:hover div{
+    transform: translateY(0);
+}
+
 /***** Fin MAIN****/
 /***
 ****
 ***/
 /*****FOOTER****/
+footer{
+    height: 80vh;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer>div:first-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+footer>div>div:first-of-type img{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+
+footer>div>div:first-of-type{
+    border-right: solid 2px grey;
+}
+
+footer>div>div:nth-of-type(2){
+    color: white;
+    font-size: large;
+    margin: 20px;
+}*/
+footer>div>div>p{
+    display: block;
+}
+
 /***** Fin FOOTER****/
