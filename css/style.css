@@ -27,7 +27,12 @@ html{
     scroll-behavior: smooth;
 }
 /*****fin HTML*****/
-/*********/
+/*****BODY****/
+body{
+    font-family: "Noodle";
+    line-height: 50px;
+}
+/*****Fin BODY****/
 /*****HEADER****/
 header{
     height: 100vh;
@@ -99,7 +104,6 @@ section>div>div{
     position: relative;
     overflow: hidden;
 }
-
 section>div>div>div{
     width: 250px;
     height: 250px;
@@ -113,9 +117,9 @@ section>div>div>div{
     align-items: center;
     transition: 1s;
 }
-
 section>div>div>div>p{
     text-align: center;
+    font-size: x-large;
 }
 section>div h2{
     height: 20%;
@@ -128,7 +132,6 @@ section>div h2{
 .haut:hover div{
     transform: translateY(0);
 }
-
 /***** Fin MAIN****/
 /***
 ****
@@ -154,21 +157,18 @@ footer>div>div:first-of-type img{
     height: 150px;
     margin: 20px;
 }
-
 footer>div>div:first-of-type{
     border-right: solid 2px grey;
 }
-
 footer>div>div:nth-of-type(2){
     color: white;
     font-size: large;
     margin: 20px;
-}*/
+}
 footer>div>div>p{
     display: block;
 }
 footer>div>a{
     margin: 5px;
 }
-
 /***** Fin FOOTER****/
