@@ -21,7 +21,40 @@ a{
     font-display: swap;
 }
 /***********fin FONTS*************/
-header{
-    height: 100px;
-
+/*****HTML****/
+html{
+    scroll-behavior: smooth;
+    font-family: "Noodle";
 }
+/*****fin HTML*****/
+/*****HEADER****/
+header{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/fond.jpg) center;
+    
+}
+header div{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: relative;
+}
+header div img{
+    height: 100%;
+    position: absolute;
+}
+header nav{
+    position: fixed;
+    top:50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+header nav ul li{
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-bottom: 1px solid;
+}
+/***** Fin HEADER****/
