@@ -20,13 +20,14 @@ a{
     font-style: normal;
     font-display: swap;
 }
-/***********fin FONTS*************/
+/*****fin FONTS******/
 /*****HTML****/
 html{
     scroll-behavior: smooth;
     font-family: "Noodle";
 }
 /*****fin HTML*****/
+/*********/
 /*****HEADER****/
 header{
     height: 500px;
@@ -34,11 +35,10 @@ header{
     justify-content: center;
     align-items: center;
     background: url(../img/fond.jpg) center;
-    
 }
 header div{
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     position: relative;
 }
@@ -58,3 +58,46 @@ header nav ul li{
     border-bottom: 1px solid;
 }
 /***** Fin HEADER****/
+/***
+****
+***/
+/*****MAIN****/
+main{
+    display: flex;
+    justify-content: flex-end;
+}
+section {
+    width: 80%;
+    padding: 100px 0; 
+    display: flex;
+    flex-wrap: wrap;
+}
+section>div{
+    width: 250px;
+    height: 250px;
+    margin: 40px;
+}
+section>div>div{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+section>div>div img{
+    /*height: 100%;*/
+    margin: 5px;
+}
+section>div h2{
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+section div>p{
+    display: none;
+}
+/***** Fin MAIN****/
+/***
+****
+***/
+/*****FOOTER****/
+/***** Fin FOOTER****/
