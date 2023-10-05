@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{ 
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/***********FONTS*************/
+@font-face {
+    font-family: 'Noodle';
+    src: url('../font/BigNoodleTitling.eot');
+    src: url('../font/BigNoodleTitling.eot?#iefix') format('embedded-opentype'),
+        url('../font/BigNoodleTitling.woff2') format('woff2'),
+        url('../font/BigNoodleTitling.woff') format('woff'),
+        url('../font/BigNoodleTitling.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/***********fin FONTS*************/
+header{
+    height: 100px;
+
+}
