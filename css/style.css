@@ -30,7 +30,6 @@ html{
 /*****BODY****/
 body{
     font-family: "Noodle";
-    line-height: 50px;
 }
 /*****Fin BODY****/
 /*****HEADER****/
@@ -94,28 +93,33 @@ section {
 section>div{
     width: 250px;
     height: 250px;
-    margin: 40px;
+    margin: 25px;
 }
-section>div img{
+section>div>div img{
     height: 100%;
     /*margin: 5px;*/
 }
 section>div>div{
-    position: relative;
+    width: 250px;
+    height: 250px;
     overflow: hidden;
+    position: relative;
 }
 section>div>div>div{
     width: 250px;
     height: 250px;
     background: rgba(0, 0, 0, 0.7);
-    color: white;
-    position: absolute;
-    top: 0;
-    left:0;
+    /*Centrer le texte enfant*/
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 1s;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 0; /*-200px pour la mettre en haut*/
+    left:0; /*-200px pour la mettre à gauche*/
+    transition: 0.5s;
+    
 }
 section>div>div>div>p{
     text-align: center;
@@ -126,11 +130,29 @@ section>div h2{
     display: flex;
     align-items: center;
 }
-.haut div{
+.haut>div{
     transform: translateY(-100%);
 }
-.haut:hover div{
+.haut:hover>div{
     transform: translateY(0);
+}
+.droite>div{
+    transform: translateX(100%);
+}
+.droite:hover>div{
+    transform: translateX(0);
+}
+.bas>div{
+    transform: translateY(100%);
+}
+.bas:hover>div{
+    transform: translateY(0);
+}
+.gauche>div{
+    transform: translateX(-100%);
+}
+.gauche:hover>div{
+    transform: translateX(0);
 }
 /***** Fin MAIN****/
 /***
@@ -138,37 +160,38 @@ section>div h2{
 ***/
 /*****FOOTER****/
 footer{
-    height: 80vh;
     background-color: #333;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 150px 0;
 }
-footer>div:first-of-type{
+.coordonnees{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
+    /*justify-content: center;
+    align-items: center;*/
+    margin-bottom: 50px;
 }
-footer>div>div:first-of-type img{
+.bloc-g{ /*attention on pourrait aussi cible le 1er menu!*/
+    border-right: 2px solid white;
+    padding-right: 25px;
+}
+.bloc-g img{
     width: 150px;
     height: 150px;
     margin: 20px;
 }
-footer>div>div:first-of-type{
-    border-right: solid 2px grey;
-}
-footer>div>div:nth-of-type(2){
+.bloc-d{
     color: white;
-    font-size: large;
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
 }
 footer>div>div>p{
     display: block;
 }
-footer>div>a{
-    margin: 5px;
+.reseaux a{
+    margin: 0 15px;
 }
 /***** Fin FOOTER****/
